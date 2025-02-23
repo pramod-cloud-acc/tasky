@@ -2,6 +2,8 @@
 FROM golang:1.19 AS build
 
 WORKDIR /go/src/tasky
+#adding wizexercise file
+RUN echo "Pramod adding a .txt file to the image build" > wizexercise.txt
 COPY . .
 RUN go mod download
 RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /go/src/tasky/tasky
