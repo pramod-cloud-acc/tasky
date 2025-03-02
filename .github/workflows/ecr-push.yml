@@ -49,4 +49,4 @@ jobs:
           docker pull public.ecr.aws/eks/aws-load-balancer-controller:v2.11.0
           docker tag public.ecr.aws/eks/aws-load-balancer-controller:v2.11.0 \
             940482412654.dkr.ecr.us-east-1.amazonaws.com/public.ecr.aws/eks/aws-load-balancer-controller:v2.11.0
-          docker push 940482412654.dkr.ecr.us-east-1.amazonaws.com/public.ecr.aws/eks/aws-load-balancer-controller:latest
+          docker push 940482412654.dkr.ecr.us-east-1.amazonaws.com/public.ecr.aws/eks/aws-load-balancer-controller:v2.11.0
